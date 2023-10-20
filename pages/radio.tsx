@@ -2,12 +2,12 @@ import type { NextPage } from "next";
 import React from "react";
 import { Layout } from "../Components/Layout/Layout";
 
-const Home: NextPage = () => {
+const Radio: NextPage = () => {
   return (
     <div>
-      <Layout page={"Home"}>Home</Layout>
+      <Layout page={"radio"}>radio</Layout>
     </div>
   );
 };
 
-export default Home;
+export default Radio;

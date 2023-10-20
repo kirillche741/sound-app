@@ -5,9 +5,10 @@ import { SideBar } from "../SideBar/SideBar";
 
 type LayoutProps = {
   children: ReactNode;
+  page: string;
 };
 
-export const Layout: FC<LayoutProps> = ({ children }) => {
+export const Layout: FC<LayoutProps> = ({ children, page }) => {
   const Wrapper = styled.div`
     padding: 24px;
   `;
@@ -20,7 +21,7 @@ export const Layout: FC<LayoutProps> = ({ children }) => {
         <Header />
       </div>
       <Content>
-        <SideBar />
+        <SideBar page={page} />
         {children}
       </Content>
     </Wrapper>
