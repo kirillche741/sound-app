@@ -12,13 +12,14 @@ export const Header = () => {
     display: flex;
     margin-left: 32px;
     align-items: center;
+    margin-bottom: 40px;
   `;
   const Search = styled.div`
     display: flex;
     padding: 27px;
   `;
   const Logo = styled.div`
-    padding-right: 34px;
+    padding-right: 8px;
   `;
   const Photo = styled.div`
     padding-right: 24px;
@@ -39,7 +40,7 @@ export const Header = () => {
   return (
     <Wrapper ref={ref}>
       <Logo>
-        <Image src="/Icon/logo.svg" alt="logo" width={34} height={34} />
+        <Image src="/Icon/logo.svg" alt="logo" width={44} height={44} />
       </Logo>
       <Search>
         <Photo>
